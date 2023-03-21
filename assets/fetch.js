@@ -1,4 +1,4 @@
-
+/*
  // Fetch posts/list.html using AJAX
  $.get("posts/list.html", function(data) {
   // Parse the HTML string into a jQuery object
@@ -19,5 +19,10 @@
     $("#posts").append($li);
   }
 });
-
-
+*/
+$(document).ready(function() {
+        $.get('posts/list.html', function(data) {
+            var list = $(data).find('.fetched').slice(-5);
+            $('#posts').append(list);
+        });
+    });
