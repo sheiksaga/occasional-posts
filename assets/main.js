@@ -19,12 +19,13 @@ const scrollHeader = () => {
 
 window.addEventListener('scroll', scrollHeader)
 
-
+/*
 // Switch theme/add to local storage
 const bodyElement = document.body;
 const themeToggleBtn = selectElement('#theme-toggle-btn');
 const currentTheme = localStorage.getItem('currentTheme');
 
+/*
 if(currentTheme){
     bodyElement.classList.add('dark-theme');
 }
@@ -39,7 +40,11 @@ themeToggleBtn.addEventListener('click', () => {
         localStorage.removeItem('currentTheme')
     }
 });
+*/
 
 
+//dark mode
+$('#theme-toggle-btn').click(function() {
+    $('body').toggleClass('dark-theme');
+  });
 
-// Swiper 

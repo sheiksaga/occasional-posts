@@ -29,6 +29,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.5s ease;
 }
 
 html{
@@ -36,7 +37,6 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-
 
 body{
     font-family: var(--font-family);
@@ -106,19 +106,11 @@ body.dark-theme{
     z-index: 999 !important;
 }
 
-.dark-theme{
-    background-color: #fad648;
-}
-
 .navbar{
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
     padding-block: 1.5rem !important;
-}
-
-.menu{
-    
 }
 
 .list{
@@ -165,7 +157,7 @@ body.dark-theme{
 }
 
 .hero{
-    padding: 10rem 1.5rem 5rem;
+    padding: 30vh 1.5rem 10vh;
 }
 
 /* Header JavaScript Styles */
@@ -176,6 +168,9 @@ body.dark-theme{
 .menu.activated{
     box-shadow: 0 1px 1rem teal;
 }
+
+/*dark theme fixes, prefix all classes or elements to be changed with .dark-theme */
+
 
 /* Search */
 

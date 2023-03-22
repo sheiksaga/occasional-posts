@@ -20,9 +20,12 @@
   }
 });
 */
+
+//gets the first 5 items. to get the last five replace slice (0,5) with slice(-5)
+
 $(document).ready(function() {
         $.get('posts/list.html', function(data) {
-            var list = $(data).find('.fetched').slice(-5);
+            var list = $(data).find('.fetched').slice(0, 5);
             $('#posts').append(list);
         });
     });
