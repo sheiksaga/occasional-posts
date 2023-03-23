@@ -8,12 +8,6 @@ html, body {
     margin-bottom: 1.5rem;
 }
 
-.container2{
-    max-width: 100rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
 /* Reset margin top for elements */
 h1{
     margin-top: 15rem;
