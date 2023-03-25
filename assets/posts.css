@@ -3,6 +3,17 @@ html, body {
     scroll-padding: 100px;
 }
 
+.posts {
+	list-style:malayalam;
+	padding: 2rem;
+	margin-left: 6rem;
+	}
+
+.posts > li{
+	padding-bottom: 1rem;
+	
+}
+
 .spacer{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -50,7 +61,7 @@ body.scrollBeyondLastLine {
 img, video {
 	width: 100%;
 	height: auto;
-	max-width: 40rem;
+	max-width: 80rem;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;

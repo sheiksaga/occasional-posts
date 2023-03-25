@@ -25,7 +25,7 @@
 
 $(document).ready(function() {
         $.get('posts/list.html', function(data) {
-            var list = $(data).find('.fetched').slice(0, 5);
+            var list = $(data).find('.fetched').slice(-5);
             $('#posts').append(list);
         });
     });

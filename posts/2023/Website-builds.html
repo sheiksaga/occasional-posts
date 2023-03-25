@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Builds</title>
+
+<link rel="stylesheet" href="../../assets/main.css">       
+<link rel="stylesheet" href="../../assets/posts.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+
+        
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href=" ">
+
+    <!-- Remix icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+
+    
+
+
+</head>
+
+    <!-- Header -->
+
+    <header class="header" id="header">
+
+        <nav class="navbar container">
+            <a href="https://occasionalposts.com">
+                <h2 class="logo">Occasional Posts</h2>
+            </a>
+
+            <div class="menu" id="menu">
+                <div class="ul" id="list">
+                    <li class="list-itm">
+                        <a href="#" class="list-link">ABOUT</a>
+                    </li>
+                </div>
+            </div>
+
+            <div class="list list-right">
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <body class="container">
+        <h1 id="website-builds">Website Builds</h1>
+
+         <pre class="spacer"></pre>
+
+<p>In  my last post I said I was using <a href="https://getpublii.com/">Publii</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> to push my posts, <a href="https://github.com/">GitHub</a> for the storage and <a href="https://www.cloudflare.com/">Cloudflare Pages</a> as my deployment.</p>
+<p>My reasons for doing so were the following:</p>
+<ul class="posts">
+<li>I wanted to remove hosting costs associated with my blog<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> - thus opting to have the site public on GitHub and deploy it with Cloudflare<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>.</li>
+<li>Move away from WordPress and use a headless CMS, where I had full control over my posts.</li>
+<li>A way to write using Markdown.</li>
+<li>Full control over the entire site - design, formatting, etc. etc.</li>
+</ul>
+<p>The first version of the site was nice, but I was having issues theming the site. Publii uses a theming format called Handlebars<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>, and it's own taxonomy for posts. Once I had Publii and Github set up and running, I ran into my next problem, which was that I felt like I still didn't have as much ownership of the site as I'd like (nothing wrong with Publii if all you want to do is write posts and publish them without worrying about what it will look like - Publii just works).</p>
+<p>So I decided to start from scratch. I got <a href="https://code.visualstudio.com/">VS Code</a> (Which I think is absolutely fantastic btw) and just started with a basic HTML5 template. I can detail the way I made the site in a later blog post.</p>
+<p>Here's how the site is as of 25/03/2023:</p>
+<p><img src="../../media/2023/homepage_23.png" class=".place-items-center" alt=""></p>
+<p>There is some functionality missing (such as the dark mode toggle not working very well), and perhaps some further fixes I will need to do, but for the most part it is working.</p>
+<p>The site is still stored on Github Pages (and I can commit directly from VS Code), and Cloudflare still deploys it. However, now I have granular control and can choose the way my blog is presented. Although it takes a little bit longer to push a post (I write in Markdown, but have to convert it to HTML), I am happier. It looks like all my initial criteria has been fulfilled.</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Publii is a offline CMS. Think WordPress for blogging, but stored on your computer. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>The blog was hosted on a VPS on <a href="https://contabo.com/en">Contabo</a>. Contabo was great, but too much for simple blogging. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>The choice of Cloudflare was a convenience one. I use it as my DNS manager, so less sites to keep track of. In reality, an other CDN service with a free option would do (Like <a href="https://www.netlify.com/">Netlify</a>, or <a href="https://vercel.com/">Vercel</a>). <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>Handlebars is not a difficult theming language. I just did not want to add more systems, and it felt like I was adding complexity to the site for no reason. <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+        
+    <script src="../../assets/main.js"></script>   
+    </body>
+    </html>
