@@ -3,22 +3,6 @@ html, body {
     scroll-padding: 100px;
 }
 
-.posts {
-	list-style:malayalam;
-	padding: 2rem;
-	margin-left: 6rem;
-	}
-
-.posts > li{
-	padding-bottom: 1rem;
-	
-}
-
-.spacer{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
 /* Reset margin top for elements */
 h1{
     margin-top: 15rem;
@@ -67,8 +51,17 @@ img, video {
 	margin-right: auto;
 }
 
-a {
+.footnote-ref a{
+		text-decoration: none;
+}
+
+.header a{
 	text-decoration: none;
+}
+
+body a{
+	text-decoration: underline;
+	color: var(--link-light);
 }
 
 a:focus,
@@ -151,8 +144,36 @@ pre code {
     margin-left: 3rem;
 }
 
+.footnote-item a{
+	text-decoration: none;
+}
+
 .footnote-item:target{
     background: lightgoldenrodyellow;
+}
+
+.footnotes-list{
+	margin-bottom: 10rem;
+}
+
+.posts {
+	list-style:malayalam;
+	padding: 2rem;
+	margin-left: 6rem;
+	}
+
+.posts > li{
+	padding-bottom: 1rem;
+	
+}
+
+li::marker{
+	font-size: 1rem;
+}
+
+.spacer{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Small devices (smaller than 640px) */

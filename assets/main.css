@@ -2,8 +2,12 @@
 :root{
     --font-light-header: navy;
     --font-dark-header: Azure;
-    --bg-light: azure;
+    --font-dark: azure;
+    --font-light: navy;
+    --bg-light: Azure;
     --bg-dark: navy;
+    --link-light: black;
+    --link-dark: yellow;
     --hover-light-color: var(--font-light);
     --hover-dark-color: var(--bg-light);
     --gradient-color: linear-gradient(
@@ -41,7 +45,7 @@ html{
 body{
     font-family: var(--font-family);
     font-size: var(--font-size-sm);
-    color: var(--font-light-header);
+    color: var(--font-light);
     background-color: var(--bg-light);
     transition: background-color 0.25s, color 0.25s;
 }
@@ -79,7 +83,7 @@ img{
 
 /* Theme color change */
 body.dark-theme{
-    color: var(--font-dark-header);
+    color: var(--font-dark);
     background-color: var(--bg-dark);
 }
 
@@ -127,7 +131,7 @@ body.dark-theme{
 }
 
 .list-link.current{
-    color: var(--font-light);
+    color: var(--link-light);
 }
 
 .btn{
@@ -156,10 +160,6 @@ body.dark-theme{
     display: block;
 }
 
-.hero{
-    padding: 30vh 1.5rem 10vh;
-}
-
 /* Header JavaScript Styles */
 .header.activated{
     box-shadow: 0 0 0.2rem 0 teal;
@@ -172,26 +172,28 @@ body.dark-theme{
 /*dark theme fixes, prefix all classes or elements to be changed with .dark-theme */
 
 
-
-
 /* Footer */
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    display: block;
     max-width: 100rem;
-    background-color: white;
+    background-color:ghostwhite;
     text-align: center;
-    padding: 5rem 0rem 2rem 0rem;
+    padding: 5rem 20rem 2rem 20rem;
     border-radius: 2.5rem;
     border-style: solid;
     border-color: powderblue;
     border-width: 1px;
     box-shadow: 0.3rem 0.3rem 0.6rem #E4EBF5, -0.2rem -0.2rem 0.5rem white;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 5rem;
-  }
+    margin-top: 5rem;
+}
+
+.dark-theme .footer{
+    background-color: navy;
+    box-shadow: 0.3rem 0.3rem 0.6rem grey, -0.2rem -0.2rem 0.5rem rgb(0, 0, 0);
+}
 
   .center{
     max-width: 2.5rem; display: block; margin-left: auto; margin-right: auto;

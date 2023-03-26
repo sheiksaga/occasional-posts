@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Website Builds</title>
+        <title>Website builds</title>
 
+    <!-- Custom styles -->
 <link rel="stylesheet" href="../../assets/main.css">       
 <link rel="stylesheet" href="../../assets/posts.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--MD formatting-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 
-        
     <!-- Favicon -->
 
     <link rel="icon" type="image/png" sizes="32x32" href=" ">
@@ -19,10 +22,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <!-- Custom styles -->
+    <!-- tracker -->
 
+    <script src="https://cdn.counter.dev/script.js" data-id="3cb77df7-73cd-45aa-8bf7-017b05919873" data-utcoffset="1"></script>
     
-
 
 </head>
 
@@ -54,26 +57,26 @@
 
     </header>
 
-
+    <!-- Title -->
     <body class="container">
-        <h1 id="website-builds">Website Builds</h1>
+        <h1 id="what-is-this-title">Website Builds</h1>
 
-         <pre class="spacer"></pre>
+    <!-- Spacer -->
+       <pre class="spacer"></pre>
 
-<p>In  my last post I said I was using <a href="https://getpublii.com/">Publii</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> to push my posts, <a href="https://github.com/">GitHub</a> for the storage and <a href="https://www.cloudflare.com/">Cloudflare Pages</a> as my deployment.</p>
-<p>My reasons for doing so were the following:</p>
+<p>Hey there! In my last post, I mentioned that I was using <a href="https://getpublii.com/">Publii</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> to publish my posts, storing them on <a href="https://github.com/">GitHub</a> and deploying them with <a href="https://www.cloudflare.com/">Cloudflare Pages</a>. I had a few reasons for doing this:</p>
 <ul class="posts">
-<li>I wanted to remove hosting costs associated with my blog<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> - thus opting to have the site public on GitHub and deploy it with Cloudflare<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>.</li>
-<li>Move away from WordPress and use a headless CMS, where I had full control over my posts.</li>
-<li>A way to write using Markdown.</li>
-<li>Full control over the entire site - design, formatting, etc. etc.</li>
+<li>First off, I wanted to cut down on the hosting costs for my blog<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>. That’s why I decided to make it public on GitHub and deploy it with Cloudflare<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>.</li>
+<li>I also wanted to move away from WordPress and use a headless CMS where I had complete control over my posts.</li>
+<li>I really like writing in Markdown!</li>
+<li>And last but not least, I wanted full control over everything on my site - from the design to the formatting.</li>
 </ul>
-<p>The first version of the site was nice, but I was having issues theming the site. Publii uses a theming format called Handlebars<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>, and it's own taxonomy for posts. Once I had Publii and Github set up and running, I ran into my next problem, which was that I felt like I still didn't have as much ownership of the site as I'd like (nothing wrong with Publii if all you want to do is write posts and publish them without worrying about what it will look like - Publii just works).</p>
-<p>So I decided to start from scratch. I got <a href="https://code.visualstudio.com/">VS Code</a> (Which I think is absolutely fantastic btw) and just started with a basic HTML5 template. I can detail the way I made the site in a later blog post.</p>
-<p>Here's how the site is as of 25/03/2023:</p>
-<p><img src="../../media/2023/homepage_23.png" class=".place-items-center" alt=""></p>
-<p>There is some functionality missing (such as the dark mode toggle not working very well), and perhaps some further fixes I will need to do, but for the most part it is working.</p>
-<p>The site is still stored on Github Pages (and I can commit directly from VS Code), and Cloudflare still deploys it. However, now I have granular control and can choose the way my blog is presented. Although it takes a little bit longer to push a post (I write in Markdown, but have to convert it to HTML), I am happier. It looks like all my initial criteria has been fulfilled.</p>
+<p>At first, everything was going great. But then I started having trouble with the theming. Publii uses a theming format called Handlebars<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup> and its own taxonomy for posts. And even though I had Publii and GitHub all set up, I still felt like I didn’t have as much control over my site as I wanted. Don’t get me wrong - Publii is great if you just want to write posts and publish them without worrying about how they’ll look. But I wanted more.</p>
+<p>So I decided to start over from scratch. I got <a href="https://code.visualstudio.com/">VS Code</a> (which is amazing, by the way) and started with a basic HTML5 template. I’ll write more about how I built the site in a future post.</p>
+<p>As of 25/03/2023, here’s where things stand:</p>
+<p><img src="../../media/2023/homepage_23.png" alt="view of homepage as on 25.03.23"></p>
+<p>There are still a few things missing (like the dark mode toggle not working quite right) and some other fixes I need to make. But for the most part, everything is working great.</p>
+<p>I’m still storing the site on GitHub Pages and deploying it with Cloudflare. But now, I have complete control over how my blog looks and feels. It takes a little longer to publish a post (since I write in Markdown and then have to convert it to HTML), but it’s worth it. All in all, I’m really happy with how everything turned out!</p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
@@ -81,14 +84,22 @@
 </li>
 <li id="fn2" class="footnote-item"><p>The blog was hosted on a VPS on <a href="https://contabo.com/en">Contabo</a>. Contabo was great, but too much for simple blogging. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn3" class="footnote-item"><p>The choice of Cloudflare was a convenience one. I use it as my DNS manager, so less sites to keep track of. In reality, an other CDN service with a free option would do (Like <a href="https://www.netlify.com/">Netlify</a>, or <a href="https://vercel.com/">Vercel</a>). <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+<li id="fn3" class="footnote-item"><p>The choice of Cloudflare was a convenience one. I use it as my DNS manager, so less sites to keep track of. But really, any CDN service with a free option would do the trick (Like <a href="https://www.netlify.com/">Netlify</a>, or <a href="https://vercel.com/">Vercel</a>). <a href="#fnref3" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn4" class="footnote-item"><p>Handlebars is not a difficult theming language. I just did not want to add more systems, and it felt like I was adding complexity to the site for no reason. <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+<li id="fn4" class="footnote-item"><p>Handlebars isn't a difficult theming language. I just didn’t want to add more systems to my site and make things more complicated than they needed to be <a href="#fnref4" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>
 
         
-    <script src="../../assets/main.js"></script>   
+<div class="footer place-items-center">
+    <div>
+        <p style="display: block;">Sangeeth, 2023</p>
+        <a href="https://designsaga.se";"><img src="../../assets/img/design saga blue1.png" class="center" alt="design saga logo"></a>
+    </div>
+</div>
+        
+<script src="../../assets/main.js"></script>
+        
     </body>
     </html>

@@ -14,9 +14,10 @@
     background:white;
     }
 
-.right-align{
+.right-aligned{
     text-align: end;
-    max-width: 100rem;
+    margin-right: 30vw;
+    margin-bottom: 5rem;
     }
 
 .dark-theme .fetched{
@@ -26,6 +27,10 @@
 
 .dark-theme .fetched:hover{
     background: rgb(80, 72, 136);
+}
+
+.hero{
+    padding: 20vh 1.5rem 10vh;
 }
 
 
