@@ -43,6 +43,10 @@
     .right-align{
         margin-right: 5rem;
     }
+
+    .hero{
+        padding: 20vh 0px 10vh 0px;
+    }
 }
 
 /* Medium devices (641px to 1007px) */
@@ -53,5 +57,9 @@
 
     .right-align{
         margin-right: 10rem;
+    }
+
+    .hero{
+        padding: 20vh 0px 10vh 0px;
     }
 }
