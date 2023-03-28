@@ -58,6 +58,7 @@ a{
 img{
     max-width: 100%;
     display: block;
+    margin: 3rem 0 3rem 0;
 }
 
 ul{
@@ -77,9 +78,6 @@ i{
     font-size: var(--font-size-md);
 }
 
-img{
-    margin: 3rem 0 3rem 0;
-}
 
 /* Theme color change */
 body.dark-theme{
@@ -130,6 +128,7 @@ body.dark-theme{
     font-size: var(--font-size-sm);
 }
 
+
 .list-link.current{
     color: var(--link-light);
 }
@@ -169,6 +168,7 @@ body.dark-theme{
     box-shadow: 0 1px 1rem teal;
 }
 
+
 /*dark theme fixes, prefix all classes or elements to be changed with .dark-theme */
 
 
@@ -179,7 +179,7 @@ body.dark-theme{
     background-color:ghostwhite;
     text-align: center;
     padding: 5rem 20rem 2rem 20rem;
-    border-radius: 2.5rem;
+    border-radius: 1rem;
     border-style: solid;
     border-color: powderblue;
     border-width: 1px;
@@ -201,7 +201,7 @@ body.dark-theme{
 
 /* Scrollbar styles */
 
-/* Blog post */
+
 
 /* Media queries */
 @media only screen and (max-width: 639px) {
@@ -211,8 +211,8 @@ body.dark-theme{
     }
 
     .container{
-        max-width: 90%;
         margin: 0 auto;
+        max-width: 90%;
     }
 
       .footer {
@@ -229,12 +229,33 @@ body.dark-theme{
     }
 
     .container{
-        max-width: 90%;
         margin: 0 auto;
+        max-width: 90%;
     }
-
  }
  
+
+/* Back to top button */
+  #back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 99;
+    font-size: var(--font-size-sm);
+    border: 0.1px solid;
+    border-color:white;
+    background-color: ghostwhite;
+    color: var(--font-light);
+    box-shadow: 0.3rem 0.3rem 0.6rem #E4EBF5, -0.2rem -0.2rem 0.5rem white;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+#back-to-top:hover {
+    background-color: white;
+}
 
 
 /*

@@ -2,7 +2,7 @@
     padding:2rem;
     display: block;
     background: ghostwhite;
-    border-radius: 5px;
+    border-radius: 1rem;
     border: 0.1px solid;
     border-color:white;
     margin-right: 70rem;
@@ -16,7 +16,7 @@
 
 .right-aligned{
     text-align: end;
-    margin-right: 30vw;
+    max-width: 90%;
     margin-bottom: 5rem;
     }
 
@@ -30,7 +30,7 @@
 }
 
 .hero{
-    padding: 20vh 1.5rem 10vh;
+    padding: 20vh 1.5rem 10vh 1.5rem;
 }
 
 
@@ -45,7 +45,7 @@
     }
 
     .hero{
-        padding: 20vh 0px 10vh 0px;
+        padding: 20vh 1.5rem 10vh 1.5rem;
     }
 }
 
@@ -60,6 +60,6 @@
     }
 
     .hero{
-        padding: 20vh 0px 10vh 0px;
+        padding: 20vh 1.5rem 10vh 1.5rem;
     }
 }

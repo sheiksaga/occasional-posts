@@ -17,26 +17,7 @@ h2, h3, h4, h5, h6 {
 	margin-bottom: 0.2em;
 }
 
-#code-csp-warning {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: white;
-	margin: 16px;
-	text-align: center;
-	font-size: 12px;
-	font-family: sans-serif;
-	background-color:#444444;
-	cursor: pointer;
-	padding: 6px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
-}
 
-#code-csp-warning:hover {
-	text-decoration: none;
-	background-color:#007acc;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-}
 
 body.scrollBeyondLastLine {
 	margin-bottom: calc(100vh - 22px);
@@ -49,18 +30,10 @@ img, video {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	border-radius: 1rem;
 }
 
-.footnote-ref a{
-		text-decoration: none;
-}
-
-.header a{
-	text-decoration: none;
-}
-
-body a{
-	text-decoration: underline;
+p a{
 	color: var(--link-light);
 }
 
@@ -138,6 +111,35 @@ pre.hljs code > div {
 pre code {
 	color: var(--vscode-editor-foreground);
 	tab-size: 4;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+.footnote-ref a{
+	text-decoration: none;
+}
+
+.header a{
+text-decoration: none;
 }
 
 .footnote-item{
