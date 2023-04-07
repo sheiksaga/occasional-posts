@@ -37,6 +37,11 @@ p a{
 	color: var(--link-light);
 }
 
+li a{
+	color: var(--link-light);
+}
+
+
 a:focus,
 input:focus,
 select:focus,
@@ -146,9 +151,6 @@ text-decoration: none;
     margin-left: 3rem;
 }
 
-.footnote-item a{
-	text-decoration: none;
-}
 
 .footnote-item:target{
     background: lightgoldenrodyellow;
@@ -176,6 +178,11 @@ li::marker{
 .spacer{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+/* dark theme fixes */
+.dark-theme p a{
+	color: var(--link-dark);
 }
 
 /* Small devices (smaller than 640px) */

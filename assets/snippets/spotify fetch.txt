@@ -1,0 +1,29 @@
+Here is some sample code using jQuery that demonstrates how to retrieve the user's current playback information from the Spotify Web API:
+
+
+// Replace ACCESS_TOKEN with your actual access token
+const ACCESS_TOKEN = 'YOUR_ACCESS_TOKEN';
+
+// Make an API request to retrieve the user's current playback information
+$.ajax({
+  url: 'https://api.spotify.com/v1/me/player/currently-playing',
+  headers: {
+    'Authorization': 'Bearer ' + ACCESS_TOKEN
+  },
+  success: function(response) {
+    // Extract the relevant information from the API response
+    const trackName = response.item.name;
+    const artistName = response.item.artists[0].name;
+    const albumImageUrl = response.item.album.images[0].url;
+    
+    // Create and update the widget with the extracted information
+    $('#track-name').text(trackName);
+    $('#artist-name').text(artistName);
+    $('#album-art').attr('src', albumImageUrl);
+  }
+});
+
+
+This code assumes that you have created HTML elements with the IDs "track-name", "artist-name", and "album-art" that you want to update with the retrieved information.
+
+Note that the Spotify Web API has some limitations and rate limits that you should be aware of. You can find more information about the API in the Spotify Developer documentation.
